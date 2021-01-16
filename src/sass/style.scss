@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
 @import "base/variables";
-@import "base/mixins"; // импорт после переменных
-
+@import "base/mixins";
 * {
    font-family: "Poppins", sans-serif;
    margin: 0;
@@ -15,8 +14,17 @@
    margin: 0 auto;
 }
 
+.divider {
+   width: 60px;
+   height: 3px;
+   background-color: $main-color;
+   margin: 25px auto 0 auto;
+}
+
 @import "blocks/promo";
 @import "blocks/title";
 @import "blocks/button";
 @import "blocks/sidepanel";
 @import "blocks/menu";
+@import "blocks/about";
+@import "blocks/resume";
